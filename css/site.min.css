@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Kufi";
+  src: url("css/DroidKufi-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.menu-link {
+  cursor: hand;
+  color: #ffffff !important;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.menu-link:hover {
+  cursor: hand;
+  color: #ffffff !important;
+  text-decoration: underline !important;
+}
+
+#wrapper {
+  background: url("./images/bg.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #000000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.images .img-container {
+  padding: 30px;
+  max-width: 300px;
+}
+
+.images .img-container img {
+  width: 100%;
+}
+
+nav {
+  background-color: #ea703f !important;
+}
+
+.Footer {
+  height: 60px;
+  background-color: #ea703f;
+}
+
+.menu {
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#contactme-check {
+  display: none;
+}
+
+#contactme-check:checked + div {
+  height: 180;
+  padding: 10px;
+}
+
+.info {
+  color: white;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 2rem;
+}
+
+.info .my-name-en,
+.info .my-name-ar {
+  white-space: nowrap;
+}
+
+.info .my-name-ar {
+  font-family: Kufi;
+  text-align: start;
+  direction: rtl;
+}
+
+.info .icons {
+  text-align: center;
+}
+
+.info .icons img {
+  height: 60px;
+  margin: 4px;
+}
+
+.skils {
+  height: 40px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+/*# sourceMappingURL=site.min.css.map */

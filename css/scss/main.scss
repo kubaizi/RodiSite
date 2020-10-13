@@ -1,0 +1,214 @@
+@import "variables";
+
+@font-face {
+  font-family: "Kufi";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/DroidKufi-Regular.eot?#iefix) format("embedded-opentype"), url(/fonts/DroidKufi-Regular.woff) format("woff"), url(/fonts/DroidKufi-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Kufi";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/DroidKufi-Bold.eot?#iefix) format("embedded-opentype"), url(/fonts/DroidKufi-Bold.woff) format("woff"), url(/fonts/DroidKufi-Bold.ttf) format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: black;
+
+  &:lang(ar) {
+    font-family: Kufi;
+  }
+}
+
+a {
+  color: white;
+  white-space: nowrap;
+
+  &:visited {
+    color: white;
+  }
+}
+
+dl,
+ol,
+ul,
+label {
+  margin-bottom: 0;
+}
+
+.info-page {
+  text-align: center;
+  padding: 0 50px;
+}
+
+.container {
+  position: relative;
+  padding-bottom: 15px;
+
+  a:nth-child(1):hover {
+    text-decoration: unset;
+  }
+}
+
+.rodi-nav {
+  background-color: $clr-dark;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 1px 1px 1px 1px white;
+  box-shadow: 0px 0px 2px 1px black;
+  margin-bottom: 1px;
+  font-size: 0.8rem;
+
+  i {
+    font-size: 1rem;
+    margin: 0 5px;
+    color: white;
+  }
+
+  a {
+    color: white;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+
+    &:visited {
+      color: white;
+    }
+
+    span {
+      padding: 0 5px;
+    }
+  }
+
+}
+
+#lang-container {
+
+  #flag-image {
+    width: 25px;
+    height: 18px;
+    display: inline-block;
+    background-image: url(/images/flag.png);
+    background-size: cover;
+  }
+
+  #selectLanguage {
+    display: flex;
+    align-items: center;
+
+    #btnLang {
+      background-color: unset;
+      border: navajowhite;
+      margin: 0 5px;
+      color: white;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.navImage {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  display: inline-block;
+  border-radius: 15px;
+  background-image: url(/images/logos.png);
+}
+
+.logo-me {
+  background-position-y: 0;
+}
+
+.logo-aloq8 {
+  background-position-y: -30px;
+}
+
+.logo-alocar {
+  background-position-y: -60px;
+}
+
+#me-image-container {
+  height: 40px;
+  cursor: pointer;
+  transition: all .2sec ease-in-out;
+
+  img {
+    height: 100%;
+    margin: 0 !important;
+  }
+
+}
+
+.me-image-big-container {
+  height: 100% !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#navMenu {
+  background-color: $clr-dark !important;
+  padding: 0 1rem;
+  border-bottom: 2px solid !important;
+  margin-bottom: 1.6rem !important;
+  color: white;
+
+  a {
+    color: white;
+
+    &:visited {
+      color: white;
+    }
+  }
+
+
+
+  #banner-message {
+    font-size: 0.7rem;
+    font-style: italic;
+    font-weight: bold;
+    background-color: $clr-dark;
+    color: white;
+    border-radius: 5px;
+    padding: 0 3px;
+  }
+}
+
+
+@media (min-width: 499px) {
+  #navMenu {
+    #banner-message {
+      font-size: 1rem;
+      padding: 0 5px;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  #navMenu {
+    #banner-message {
+      position: absolute;
+      top: 45px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  #navMenu {
+    #banner-message {
+      position: unset;
+    }
+  }
+}
