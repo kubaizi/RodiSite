@@ -1,23 +1,11 @@
 body,
 html {
   height: 100%;
-}
-
-.menu-link {
-  cursor: pointer;
-  color: #ffffff !important;
-  font-weight: bold;
-  margin: 0 10px;
-}
-
-.menu-link:hover {
-  cursor: pointer;
-  color: #ffffff !important;
-  text-decoration: underline !important;
+  color: black;
 }
 
 #wrapper {
-  background: url("/images/rodi/bg.jpg");
+  background: url("../images/bg.jpg");
   background-size: contain;
   background-repeat: repeat;
   display: -webkit-box;
@@ -33,7 +21,172 @@ html {
           justify-content: center;
 }
 
-#wrapper .images {
+#wrapper .banner-container {
+  position: relative;
+}
+
+#wrapper .banner-container #banner-image {
+  width: 100%;
+}
+
+#wrapper .banner-container .banner-text {
+  position: absolute;
+  bottom: 0;
+  left: 23%;
+  font-weight: bold;
+}
+
+#wrapper .banner-container .banner-text .banner-my-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#wrapper .banner-container .banner-text .banner-my-title {
+  font-style: italic;
+}
+
+#wrapper .skils {
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#wrapper .skils div {
+  height: 35px;
+  background-image: url("../images/skils.jpg");
+  background-size: cover;
+  width: 88px;
+}
+
+#wrapper .skils .mcp-logo {
+  background-position-y: 0;
+}
+
+#wrapper .skils .net-logo {
+  background-position-y: -35px;
+}
+
+#wrapper .skils .sql-logo {
+  background-position-y: -70px;
+}
+
+#wrapper .skils .xamarin-logo {
+  background-position-y: -105px;
+}
+
+#wrapper .skils .c-sharp-logo {
+  background-position-y: -140px;
+}
+
+#wrapper .skils .html-logo {
+  background-position-y: -175px;
+}
+
+#wrapper .skils .js-logo {
+  background-position-y: -210px;
+}
+
+#wrapper .skils .css-logo {
+  background-position-y: -245px;
+}
+
+#wrapper .skils .scss-logo {
+  background-position-y: -280px;
+}
+
+#wrapper .skils .os-logo {
+  background-position-y: -315px;
+}
+
+#wrapper .my-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+}
+
+#wrapper .my-nav .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 3px;
+  border: 1px solid;
+  padding: 3px;
+  -webkit-box-shadow: 2px 2px 5px 0px black;
+          box-shadow: 2px 2px 5px 0px black;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#wrapper .my-nav .nav-item span {
+  margin: 0 4px;
+}
+
+#wrapper .my-nav .nav-item:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+}
+
+#wrapper .my-nav .nav-item .nav-image {
+  background-image: url("../images/nav_images.png");
+  background-size: 40px 120px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+#wrapper .my-nav .nav-item .me-image {
+  background-position-y: -40px;
+}
+
+#wrapper .my-nav .nav-item .exp-image {
+  background-position-y: -80px;
+}
+
+#wrapper .my-nav .active {
+  border: 1px solid black;
+  padding: 3px 0;
+  background-color: firebrick;
+  color: beige;
+}
+
+#wrapper .my-nav img {
+  width: 40px;
+}
+
+#wrapper .pages-container {
+  margin: 10px 10px;
+}
+
+#wrapper .pages-container .about-me {
+  padding: 0 10px 10px 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: firebrick;
+  color: white;
+  line-height: 2.5rem;
+}
+
+#wrapper .pages-container .basketball-images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,13 +200,13 @@ html {
           justify-content: center;
 }
 
-#wrapper .images .img-container {
+#wrapper .pages-container .basketball-images .img-container {
   padding: 30px;
   max-width: 300px;
   min-width: 300px;
 }
 
-#wrapper .images .img-container img {
+#wrapper .pages-container .basketball-images .img-container img {
   width: 100%;
 }
 
@@ -71,24 +224,10 @@ nav {
   height: 60px;
   bottom: 0;
   text-align: center;
-  background-color: #31456a;
-  color: white;
+  background-color: transparent;
   border: none !important;
-  -webkit-box-shadow: 1px -5px 21px 13px black;
-          box-shadow: 1px -5px 21px 13px black;
-}
-
-.menu {
-  position: absolute;
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  height: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  font-size: 1.2rem;
-  font-weight: bold;
-  line-height: 50px;
+  -webkit-box-shadow: 1px -1px 1px 1px black;
+          box-shadow: 1px -1px 1px 1px black;
 }
 
 #contactme-check,
@@ -128,112 +267,6 @@ nav {
   padding: 2px 6px;
   margin: 6px auto;
   background-color: black;
-}
-
-.skils {
-  background-color: white;
-  padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.skils div {
-  height: 35px;
-  background-image: url(/images/rodi/skils.jpg);
-  background-size: cover;
-  width: 88px;
-}
-
-.skils .mcp-logo {
-  background-position-y: 0;
-}
-
-.skils .net-logo {
-  background-position-y: -35px;
-}
-
-.skils .sql-logo {
-  background-position-y: -70px;
-}
-
-.skils .xamarin-logo {
-  background-position-y: -105px;
-}
-
-.skils .c-sharp-logo {
-  background-position-y: -140px;
-}
-
-.skils .html-logo {
-  background-position-y: -175px;
-}
-
-.skils .js-logo {
-  background-position-y: -210px;
-}
-
-.skils .css-logo {
-  background-position-y: -245px;
-}
-
-.skils .scss-logo {
-  background-position-y: -280px;
-}
-
-.skils .os-logo {
-  background-position-y: -315px;
-}
-
-.info {
-  color: white;
-  padding: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-shadow: 0px 3px 0px -2px rgba(255, 255, 255, 0.3);
-          box-shadow: 0px 3px 0px -2px rgba(255, 255, 255, 0.3);
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.info div {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  font-size: 1rem;
-  text-align: center;
-}
-
-.info .icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.info .icons img {
-  height: 60px;
-  margin: 4px;
 }
 
 @media (min-width: 768px) {
