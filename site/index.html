@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
     <meta name="author" content="Rodi Kubaizi">
     <meta name="generator" content="Rodi Kubaizi v1.0">
     <meta property="og:url" content="https://www.rodikubaizi.com/">
@@ -52,7 +52,7 @@
 
         </div>
         <div class="my-nav">
-            <div class="nav-item active" data-id="1">
+            <div class="nav-item" data-id="1">
                 <div class="nav-image me-image"></div>
                 <span>Who Im I</span>
             </div>
@@ -80,6 +80,15 @@
                 many companies and goverment institutions to develop, consult and train employees creating Web
                 & desktop & Mobile applications.
             </div>
+            <div class="experience">
+                • Desktop Application Developer
+                • IIS Web Server Administrator
+                • Web Site Developer (HTML,ASP.NET)
+                • Web Application Developer (VB.NET, C++, Java)
+                • MSSQL 2000 Database Administrator & Developer
+                • Graphics Designer (Photoshop, Macromedia Flash)
+
+            </div>
         </div>
 
     </div>
@@ -98,11 +107,14 @@
             var id = $(this).attr('data-id');
             switch (id) {
                 case '1':
+
                     $(".basketball-images").slideUp();
+                    $(".experience").slideUp();
                     $(".about-me").slideToggle();
                     break;
                 case '2':
                     $(".about-me").slideUp();
+                    $(".experience").slideUp();
                     $(".basketball-images").slideToggle({
                         start: function () {
                             $(this).css({
@@ -110,6 +122,11 @@
                             })
                         }
                     });
+                    break;
+                case '3':
+                    $(".about-me").slideUp();
+                    $(".basketball-images").slideUp();
+                    $(".experience").slideToggle();
                     break;
                 default:
                     break;

@@ -45,7 +45,7 @@ html {
   }
 
   .skils {
-    // background-color: white;
+    margin-top: 20px;
     padding: 5px;
     display: flex;
     flex-flow: wrap;
@@ -104,7 +104,7 @@ html {
   }
 
   .my-nav {
-    // padding: 15px;
+    margin-top: 20px;
     display: flex;
     flex-flow: wrap;
     align-items: center;
@@ -191,6 +191,17 @@ html {
           width: 100%;
         }
       }
+    }
+
+    .experience {
+      padding: 0 10px 10px 10px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      background-color: firebrick;
+      color: white;
+      line-height: 2.5rem;
+      border-radius: 5px;
+      display: none;
     }
   }
 }
