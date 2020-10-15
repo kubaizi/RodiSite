@@ -10,7 +10,7 @@ html {
 
 #wrapper {
   background: url("../images/bg.jpg");
-  background-size: contain;
+  background-size: auto;
   background-repeat: repeat;
   display: -webkit-flex;
   display: flex;
@@ -53,7 +53,7 @@ html {
 
     div {
       height: 35px;
-      background-image: url('../images/skils.jpg');
+      background-image: url('../images/skils.png');
       background-size: cover;
       width: 88px;
     }
@@ -96,6 +96,10 @@ html {
 
     .os-logo {
       background-position-y: -315px;
+    }
+
+    .az-logo {
+      background-position-y: -350px;
     }
   }
 
@@ -167,6 +171,8 @@ html {
       background-color: firebrick;
       color: white;
       line-height: 2.5rem;
+      border-radius: 5px;
+      display: none;
     }
 
     .basketball-images {
@@ -174,6 +180,7 @@ html {
       flex: 1;
       flex-flow: wrap;
       justify-content: center;
+      display: none;
 
       .img-container {
         padding: 30px;

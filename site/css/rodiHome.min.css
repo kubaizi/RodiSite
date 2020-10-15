@@ -6,7 +6,7 @@ html {
 
 #wrapper {
   background: url("../images/bg.jpg");
-  background-size: contain;
+  background-size: auto;
   background-repeat: repeat;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,7 +58,7 @@ html {
 
 #wrapper .skils div {
   height: 35px;
-  background-image: url("../images/skils.jpg");
+  background-image: url("../images/skils.png");
   background-size: cover;
   width: 88px;
 }
@@ -101,6 +101,10 @@ html {
 
 #wrapper .skils .os-logo {
   background-position-y: -315px;
+}
+
+#wrapper .skils .az-logo {
+  background-position-y: -350px;
 }
 
 #wrapper .my-nav {
@@ -184,6 +188,8 @@ html {
   background-color: firebrick;
   color: white;
   line-height: 2.5rem;
+  border-radius: 5px;
+  display: none;
 }
 
 #wrapper .pages-container .basketball-images {
@@ -198,6 +204,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: none;
 }
 
 #wrapper .pages-container .basketball-images .img-container {

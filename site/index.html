@@ -48,25 +48,25 @@
             <div class="css-logo"> </div>
             <div class="scss-logo"> </div>
             <div class="os-logo"> </div>
+            <div class="az-logo"> </div>
 
         </div>
         <div class="my-nav">
-            <div class="nav-item active">
+            <div class="nav-item active" data-id="1">
                 <div class="nav-image me-image"></div>
                 <span>Who Im I</span>
             </div>
-            <div class="nav-item">
+            <div class="nav-item" data-id="2">
                 <div class="nav-image basketball-image"></div>
                 <Span>Hoop</Span>
             </div>
-            <div class="nav-item">
+            <div class="nav-item" data-id="3">
                 <div class="nav-image exp-image"></div>
                 <span>Experience</span>
             </div>
         </div>
         <div class="pages-container">
-
-            <div class="basketball-images d-none">
+            <div class="basketball-images">
                 <div class="img-container"> <img src="images/1.jpg"></div>
                 <div class="img-container"> <img src="images/2.jpg"></div>
                 <div class="img-container"> <img src="images/3.jpg"></div>
@@ -92,24 +92,29 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" crossorigin="anonymous"></script>
     <script src="lib/bootstrap/dist/css/bootstrap.min.css"></script>
     <script type="text/javascript">
-        $("#wrapper").off().on("click", function (event) {
-            if (event.target.id == "contact-me" || event.target.id == "contactme-check") {
-                return;
+        $(".nav-item").click(function () {
+            $(".nav-item").attr('class', 'nav-item');
+            $(this).addClass('active');
+            var id = $(this).attr('data-id');
+            switch (id) {
+                case '1':
+                    $(".basketball-images").slideUp();
+                    $(".about-me").slideToggle();
+                    break;
+                case '2':
+                    $(".about-me").slideUp();
+                    $(".basketball-images").slideToggle({
+                        start: function () {
+                            $(this).css({
+                                display: "flex"
+                            })
+                        }
+                    });
+                    break;
+                default:
+                    break;
             }
-            if (event.target.id == "whoami" || event.target.id == "whoami-check") {
-                return;
-            }
-            if (event.target.id != "contact-me" && $("#contactme-check").prop('checked') == true) {
-                $("#contactme-check").click();
-            }
-            if (event.target.id != "whoami" && $("#whoami-check").prop('checked') == true) {
-                $("#whoami-check").click();
-            }
-        });
-        $("#me-image-container").click(function (e) {
-            e.preventDefault();
-            $(this).toggleClass('me-image-big-container');
-        });
+        })
     </script>
 </body>
 
