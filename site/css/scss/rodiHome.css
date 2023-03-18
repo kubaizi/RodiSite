@@ -9,7 +9,6 @@ html {
   font-weight: bold;
   margin: 0 10px;
 }
-
 .menu-link:hover {
   cursor: pointer;
   color: #ffffff !important;
@@ -20,39 +19,22 @@ html {
   background: url("/images/rodi/bg.jpg");
   background-size: contain;
   background-repeat: repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: #000000;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 #wrapper .images {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex: 1;
+  flex-flow: wrap;
+  justify-content: center;
 }
-
 #wrapper .images .img-container {
   padding: 30px;
   max-width: 300px;
   min-width: 300px;
 }
-
 #wrapper .images .img-container img {
   width: 100%;
 }
@@ -74,8 +56,7 @@ nav {
   background-color: #31456a;
   color: white;
   border: none !important;
-  -webkit-box-shadow: 1px -5px 21px 13px black;
-          box-shadow: 1px -5px 21px 13px black;
+  box-shadow: 1px -5px 21px 13px black;
 }
 
 .menu {
@@ -84,7 +65,6 @@ nav {
   border-radius: 10px;
   overflow: hidden;
   height: 0;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   font-size: 1.2rem;
   font-weight: bold;
@@ -106,23 +86,16 @@ nav {
 .my-name {
   background-color: #30092e;
   color: #f9e7a7;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-flow: wrap;
+  align-items: center;
   word-spacing: 3px;
   padding: 6px 10px;
   white-space: nowrap;
 }
-
 .my-name i {
   margin: 0 10px;
 }
-
 .my-name span {
   border: 1px solid wheat;
   padding: 2px 6px;
@@ -133,58 +106,43 @@ nav {
 .skils {
   background-color: white;
   padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-flow: wrap;
+  justify-content: space-around;
 }
-
 .skils div {
   height: 35px;
   background-image: url(/images/rodi/skils.jpg);
   background-size: cover;
   width: 88px;
 }
-
 .skils .mcp-logo {
   background-position-y: 0;
 }
-
 .skils .net-logo {
   background-position-y: -35px;
 }
-
 .skils .sql-logo {
   background-position-y: -70px;
 }
-
 .skils .xamarin-logo {
   background-position-y: -105px;
 }
-
 .skils .c-sharp-logo {
   background-position-y: -140px;
 }
-
 .skils .html-logo {
   background-position-y: -175px;
 }
-
 .skils .js-logo {
   background-position-y: -210px;
 }
-
 .skils .css-logo {
   background-position-y: -245px;
 }
-
 .skils .scss-logo {
   background-position-y: -280px;
 }
-
 .skils .os-logo {
   background-position-y: -315px;
 }
@@ -192,45 +150,24 @@ nav {
 .info {
   color: white;
   padding: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-shadow: 0px 3px 0px -2px rgba(255, 255, 255, 0.3);
-          box-shadow: 0px 3px 0px -2px rgba(255, 255, 255, 0.3);
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 3px 0px -2px rgba(255, 255, 255, 0.3);
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 .info div {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   font-size: 1rem;
   text-align: center;
 }
-
 .info .icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .info .icons img {
   height: 60px;
   margin: 4px;
@@ -238,16 +175,10 @@ nav {
 
 @media (min-width: 768px) {
   .info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: unset;
-            flex-flow: unset;
+    flex-flow: unset;
   }
   .info .icons {
-    -webkit-box-ordinal-group: unset;
-        -ms-flex-order: unset;
-            order: unset;
-    -ms-flex-preferred-size: unset;
-        flex-basis: unset;
+    order: unset;
+    flex-basis: unset;
   }
-}
+}/*# sourceMappingURL=rodiHome.css.map */
